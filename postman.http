@@ -1,0 +1,56 @@
+GET http://localhost:5000/departments HTTP/1.1
+
+###
+
+GET http://localhost:5000/users?gender=female HTTP/1.1
+
+
+###
+
+POST  http://localhost:5000/admin/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"boboqulovrasul80@gmail.com",
+    "contact":"+998976787121"
+}
+
+###
+
+
+
+POST http://localhost:5000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "pos_ref_id":"643d33edf5aafee84ac5f868",
+    "first_name":"AdminBek ",
+    "last_name":"Jonqulov",
+    "gender":"female",
+    "contact":"+998991233321",
+    "email":"boboqulovrasul80@gmail.com"
+}
+
+####
+
+
+POST http://localhost:5000/positions HTTP/1.1
+Content-Type: application/json
+
+{
+    "dep_ref_id":"643bcd4b331aac430b1f2cf7",
+    "pos_name":"Admin",
+    "salary":800
+}
+
+####
+
+POST http://localhost:5000/groups HTTP/1.1
+Content-Type: application/json
+
+{
+    "dir_ref_id":"643bdc18d198239c76a6fd40",
+    "gr_number":59
+}
+
+####
